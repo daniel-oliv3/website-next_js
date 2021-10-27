@@ -1,0 +1,19 @@
+{
+  "name": "website-next_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-oliv3/website-next_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-oliv3/website-next_js/issues"
+  },
+  "homepage": "https://github.com/daniel-oliv3/website-next_js#readme"
+}
