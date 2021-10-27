@@ -8,3 +8,6 @@ Cria o arquivo package.json
 
 Cria o projeto com NEXT.js
 ### npm install next react react-dom
+
+Rodar o projeto
+### npm run dev
