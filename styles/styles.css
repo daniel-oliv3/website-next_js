@@ -61,6 +61,10 @@
       display: block;
       z-index: 999;
     }
+    .menu-btn i.active:before{
+      content: "/f00d";
+    }
+
     .navbar .menu {
       background-color: #141b29;
       position: fixed;
