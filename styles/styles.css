@@ -48,3 +48,27 @@
     font-weight: 400;
     margin-left: 25px;
   }
+
+  .menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media (max-width: 947px){
+    .menu-btn {
+      display: block;
+      z-index: 999;
+    }
+    .navbar .menu {
+      background-color: #141b29;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      text-align: center;
+      padding-top: 80px;
+    }
+  }
