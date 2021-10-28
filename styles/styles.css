@@ -1,5 +1,10 @@
-body {
-    font-family: 'Arial', sans-serif; 
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: #0a0e17;
   }
