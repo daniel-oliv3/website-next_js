@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Menu from '../components/Menu';
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <title>Sapup3 - Home</title>
             </Head>
-            Menu<br/>
+            <Menu /><br/>
             Conteúdo do topo do site!
         </div>
     )
