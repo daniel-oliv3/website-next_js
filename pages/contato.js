@@ -10,7 +10,7 @@ function Contato() {
                 <meta name="description" content="Site sobre ..." />
                 <meta name="author" content="Daniel Oliveira" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <title>Sapup3 - Home</title>
+                <title>Sapup3 - Contato</title>
             </Head>
             <Menu /><br/>
             Conteúdo do topo do site!
