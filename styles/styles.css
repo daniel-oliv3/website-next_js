@@ -111,9 +111,48 @@ section {
 .top {
   color: #141b29;
   display: flex;
-  background: url("../public/imagem-1.jpg");
+  background: url("../public/imagem-12.jpg");
   height: 100vh;
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+.top .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.top .top-content .text-1 {
+  font-size: 25px;
+}
+
+.top .top-content .text-2 {
+  font-size: 55px;
+  font-weight: 400;
+  margin-left: -3px;
+}
+
+.top .top-content .text-3 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.top .top-content a {
+  display: inline-block;
+  background-color: #1f80e0;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 32px;
+  margin-top: 20px;
+  font-weight: 300;
+  border-radius: 6px;
+  border: 2px solid #1f80e0;
+  transition: all 0.3s ease;
+}
+
+.top .top-content a:hover {
+  color: #1f80e0;
+  background: none;
+}  
