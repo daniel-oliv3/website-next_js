@@ -1,7 +1,7 @@
 {
   "name": "website-next_js",
   "version": "1.0.0",
-  "description": "",
+  "description": "COMO RODAR O PROJETO BAIXADO\r Instalar todas as dependencias indicadas pelo pakage.json\r ### npm install",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
