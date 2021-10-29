@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family-Ubuntu:wght@400;500;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -94,7 +96,24 @@
     .max-width {
       max-width: 930px;
     }
-
   }
 
-  
+section {
+  padding: 50px 0;
+}
+
+@media(max-width: 690px){
+  section {
+    padding: 20px 0;
+  }
+}
+
+.top {
+  color: #141b29;
+  display: flex;
+  background: url("../public/imagem-1.jpg");
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
