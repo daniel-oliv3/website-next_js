@@ -15,3 +15,6 @@ Doc: https://www.npmjs.com/package/express
 
 Instalar a dependência de forma global, "-g" significa globalmente. Executar o comando através do prompt de comando, executar somente se nunca instalou a dependência na maaquina, apois instalar, reiniciar a maquina.
 ### npm install -g nodemon
+
+Instalar a dependência como desenvolvedor para reiniciar o servidor sempre que houver alteração no código fonte.
+### npm install --save-dev nodemon
