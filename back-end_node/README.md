@@ -24,3 +24,9 @@ Permite acesso a API - https://www.npmjs.com/package/cors
 
 Rodar o projeto usando o nodemon
 ### nodemon app.js
+
+Banco de dados MySQL criado com
+### CREATE DATABASE sapup3_banco CHARACTER SET UTF8MB4 COLLATE utf8mb4_unicode_ci;
+
+Sequelize é uma biblioteca JavaScript que facilita o gerenciamento de um banco de dados SQL
+### npm install --save sequelize
