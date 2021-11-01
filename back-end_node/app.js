@@ -29,6 +29,15 @@ app.get('/', async(req, res) => {
 
 app.post('/add-home', async (req, res) => {
 
+    const dataHome = await Home.findOne();
+
+    if(dataHome){
+        return res.status(400).json({
+            erro: true,
+            mensagem: "Erro: Não cadastrado com sucesso, a página home possui um registro!"
+        });
+    }
+
     await Home.create(req.body)
     .then(() => {
         return res.json({
@@ -36,7 +45,7 @@ app.post('/add-home', async (req, res) => {
             mensagem: "Dados para a página home cadastrado com sucesso!"
         });
     }).catch(() => {
-        return res.json({
+        return res.status(400).json({
             erro: true,
             mensagem: "Erro: Dados para a página home não cadastrado com sucesso!"
         });
