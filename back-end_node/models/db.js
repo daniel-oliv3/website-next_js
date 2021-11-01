@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('sapup3_banco', 'root', '1234567', {
+const sequelize = new Sequelize('sapup3_banco', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
 });
