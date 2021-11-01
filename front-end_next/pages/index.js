@@ -32,9 +32,6 @@ function Home( {data}) {
                 </div>
             </section>
             
-
-
-
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
             <script src="custom.js"></script>
             
@@ -46,7 +43,6 @@ export async function getServerSideProps() {
     const response = await fetch(`http://localhost:8080/`);
     const data = await response.json();
     //console.log(data);
-
     return { props: {data}};
 }
 

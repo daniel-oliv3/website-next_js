@@ -4,6 +4,8 @@ const app = express();
 
 const Home = require('./models/Home');
 
+app.use(express.json());
+
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
@@ -22,7 +24,15 @@ app.get('/', async(req, res) => {
             btn_title: "Entrar em Contato ", 
             btn_link: "http://localhost:3000/contato",
         }
-    })
+    });
+});
+
+app.post('/add-home', async (req, res) => {
+    console.logo(req.body);
+    return res.json({
+        erro: false,
+        mensagem: "Dados para a págna home cadastrado com sucesso!"
+    });
 });
 
 app.listen(8080, () => {
