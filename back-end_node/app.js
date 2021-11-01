@@ -28,11 +28,21 @@ app.get('/', async(req, res) => {
 });
 
 app.post('/add-home', async (req, res) => {
-    console.logo(req.body);
-    return res.json({
-        erro: false,
-        mensagem: "Dados para a págna home cadastrado com sucesso!"
-    });
+
+    await Home.create(req.body)
+    .then(() => {
+        return res.json({
+            erro: false,
+            mensagem: "Dados para a página home cadastrado com sucesso!"
+        });
+    }).catch(() => {
+        return res.json({
+            erro: true,
+            mensagem: "Erro: Dados para a página home não cadastrado com sucesso!"
+        });
+    })
+
+    
 });
 
 app.listen(8080, () => {

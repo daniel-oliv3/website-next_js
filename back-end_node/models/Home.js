@@ -31,6 +31,6 @@ const Home = db.define('homes', {
 });
 
 //cria a tabela no banco de dados
-Home.sync();
+//Home.sync();
 
 module.exports = Home;
