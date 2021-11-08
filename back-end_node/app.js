@@ -15,7 +15,20 @@ app.use((req, res, next) => {
 });
 
 app.get('/', async(req, res) => {
-    return res.json({
+
+    await Home.findOne()
+        .then((datahome) => {
+            return res.json({
+                erro: false,
+                datahome
+            });
+        }).catch(() => {
+            return res.status(400).json({
+                erro: true,
+                mensagem: "Erro: Nenhum valor rncontrado para a págia home!"
+            });
+        });
+    /*return res.json({
         erro: false,
         datahome: {
             text_one: "Temos a solução", 
@@ -24,7 +37,7 @@ app.get('/', async(req, res) => {
             btn_title: "Entrar em Contato ", 
             btn_link: "http://localhost:3000/contato",
         }
-    });
+    }); */
 });
 
 app.post('/add-home', async (req, res) => {
