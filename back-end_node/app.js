@@ -16,7 +16,9 @@ app.use((req, res, next) => {
 
 app.get('/', async(req, res) => {
 
-    await Home.findOne()
+    await Home.findOne({
+        attributes: ['text_one', 'text_two', 'text_three', 'btn_title', 'btn_link',]
+    })
         .then((datahome) => {
             return res.json({
                 erro: false,

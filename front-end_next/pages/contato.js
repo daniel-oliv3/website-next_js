@@ -12,8 +12,16 @@ function Contato() {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <title>Sapup3 - Contato</title>
             </Head>
-            <Menu /><br/>
-            Conteúdo do topo do site!
+            <Menu /><br/><br/><br/><br/><br/>
+            <form>
+                <input type="text" name="name" placeholder="Digite o nome"/><br/><br/>
+                <input type="email" name="email" placeholder="Digite o seu e-mail"/><br/><br/>
+
+                <input type="text" name="subject" placeholder="Digite o assunto da mensagem"/><br/><br/>
+                <input type="text" name="content" placeholder="Digite o conteúdo da mensagem"/><br/><br/>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     )
 }
