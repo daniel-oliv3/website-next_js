@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 
 const Home = require('./models/Home');
+const MsgContact = require('./models/MsgContact');
 
 app.use(express.json());
 
