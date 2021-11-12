@@ -1,7 +1,19 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Menu from '../components/Menu';
 
 function Contato() {
+
+    const [dataForm, setDataForm] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        content: ''
+    });
+
+    const onChangeInput = e => setDataForm( {...dataForm, [e.target.name]: e.target.value});
+
+
     return (
         <div>
             <Head>
@@ -14,11 +26,11 @@ function Contato() {
             </Head>
             <Menu /><br/><br/><br/><br/><br/>
             <form>
-                <input type="text" name="name" placeholder="Digite o nome"/><br/><br/>
-                <input type="email" name="email" placeholder="Digite o seu e-mail"/><br/><br/>
+                <input type="text" name="name" placeholder="Digite o nome" onChange={onChangeInput} value={dataForm.name}/><br/><br/>
+                <input type="email" name="email" placeholder="Digite o seu e-mail" onChange={onChangeInput} value={dataForm.name}/><br/><br/>
 
-                <input type="text" name="subject" placeholder="Digite o assunto da mensagem"/><br/><br/>
-                <input type="text" name="content" placeholder="Digite o conteúdo da mensagem"/><br/><br/>
+                <input type="text" name="subject" placeholder="Digite o assunto da mensagem" onChange={onChangeInput} value={dataForm.name}/><br/><br/>
+                <input type="text" name="content" placeholder="Digite o conteúdo da mensagem" onChange={onChangeInput} value={dataForm.name}/><br/><br/>
 
                 <button type="submit">Enviar</button>
             </form>
