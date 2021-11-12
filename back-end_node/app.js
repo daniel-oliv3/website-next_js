@@ -70,6 +70,24 @@ app.post('/add-home', async (req, res) => {
     
 });
 
+app.post("/add-msg-contact", async (req, res) => {
+    console.log(req.body);
+
+    await MsgContact.create(req.body)
+    .then((msgContact) => {
+        return res.json({
+            erro: false,
+            id: msgContact.id,
+            mensagem: "Mensagem de contato enviando com sucesso!"
+        });
+    }).catch(() => {
+        return res.status(400).json({
+            erro: true,
+            mensagem: "Erro: Mensagem de contato não envianda com sucesso!"
+        });
+    });
+});
+
 app.listen(8080, () => {
     console.log("Servidor iniciado na porta 8080: http://localhost:8080");
 });
